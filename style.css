@@ -1,23 +1,49 @@
 * {
     padding: 0;
     margin: 0;
+    border: transparent;
     font-family: 'Raleway', sans-serif;
 }
 
+header {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
 .navbar-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem 2rem;
+    flex-direction: column-reverse;
+    padding: 1.3rem 1rem;
+    gap: 2rem;
+}
+
+@media (min-width: 40em) {
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 1rem;
+        gap: 2rem;
+        justify-content: flex-end;
+    }
 }
 
 .nav-brand {
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }
 
 .nav-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
 }
 
@@ -28,4 +54,64 @@
 }
 
 .third-nav-item {
+    text-align: end;
+}
+
+.location-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+.thinner {
+    font-weight: 500;
+}
+
+.form-wrapper {
+}
+
+.location-icon-wrapper {
+    border-radius: 5px 0px 0px 5px;
+    background-color: lightgrey;
+    padding: 0.4rem 0.6rem;
+}
+
+#location {
+    border-color: lightgrey;
+    border-width: thin;
+    padding: 0.25rem 0.3rem;
+    font-weight: 600;
+}
+
+.search-icon-wrapper {
+    border-radius: 5px 5px 5px 5px;
+    background-color: blue;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    transform: scale(1.2);
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.filter {
+    border: 1px solid grey;
+    padding: 0.4rem;
+    max-width: 10rem;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.filter-icon-wrapper {
+    border-radius: 50%;
+    background-color: lightblue;
+    color: darkblue;
+    padding: 0.5rem 0.5rem;
+    transform: scale(1.1);
 }

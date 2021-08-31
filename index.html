@@ -9,16 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar-container">
+    <header>
         <h1 class="nav-brand">Reservia</h1>
-        <div class="nav-items">
-            <h6 class="first-nav-item">Accomodations</h6>
-            <h6 class="second-nav-item">Activities</h6>
+        <nav class="navbar-container">
+            <div class="nav-items">
+                <h6 class="first-nav-item">Accomodations</h6>
+                <h6 class="second-nav-item">Activities</h6>
+            </div>
             <h6 class="third-nav-item">Sign Up</h6>
+        </nav>
+    </header>
+    <main>
+        <div class="location-form-container">
+            <h4>Find a place for your dream vacation</h4>
+            <h5 class="thinner">Downtown or in nature</h5>
+            <form action="" class="form-wrapper"><i class="fas fa-map-marker-alt location-icon-wrapper"></i><input type="text" name="location" id="location" value="Marseille, France"><button><i class="fas fa-search search-icon-wrapper"></i></button></form>
         </div>
-    </nav>
-    <main></main>
+        <div class="filter-container">
+            <h2>Filters</h2>
+            <div class="filter"><i class="fas fa-money-bill-wave filter-icon-wrapper"></i>Low Cost</div>
+            <div class="filter">Romantic</div>
+            <div class="filter">Family Friendly</div>
+            <div class="filter">Pets Allowed</div>
+        </div>
+    </main>
 </body>
 </html>
