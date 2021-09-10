@@ -10,7 +10,12 @@ header {
 }
 
 main {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1rem auto;
 }
 
 .navbar-container {
@@ -97,15 +102,17 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 0.2rem;
 }
 
 .filter {
     border: 1px solid grey;
-    padding: 0.4rem;
+    padding: 0.3rem 0.4rem;
     max-width: 10rem;
     border-radius: 25px;
     font-weight: 500;
+    margin: 0.3rem 0;
 }
 
 .filter-icon-wrapper {
@@ -113,5 +120,6 @@ main {
     background-color: lightblue;
     color: darkblue;
     padding: 0.5rem 0.5rem;
-    transform: scale(1.1);
+    margin-right: 0.6rem;
+    transform: scale(1.4);
 }
