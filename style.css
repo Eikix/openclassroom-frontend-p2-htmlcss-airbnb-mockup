@@ -79,12 +79,12 @@ section {
 
 .location-icon-wrapper {
     border-radius: 5px 0px 0px 5px;
-    background-color: lightgrey;
+    background-color: rgb(243, 243, 243);
     padding: 0.4rem 0.6rem;
 }
 
 #location {
-    border-color: lightgrey;
+    border-color: rgb(236, 236, 236);
     border-width: thin;
     padding: 0.25rem 0.3rem;
     font-weight: 600;
@@ -117,16 +117,27 @@ section {
 
 .filter-icon-wrapper {
     border-radius: 50%;
-    background-color: lightblue;
-    color: darkblue;
-    padding: 0.6rem 0.5rem;
+    background-color: #dbecff;
+    color: #2157cc;
+    padding: 0.6rem 0.7rem;
     margin-right: 0.6rem;
     transform: scale(1.4);
+}
+
+.info-wrapper {
+    display: flex;
+    gap: 0.7em;
+    margin: 1em 0;
 }
 
 .popular-container {
     display: flex;
     flex-direction: column;
+}
+
+.popular-header-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .popular-cards-container {
@@ -171,8 +182,28 @@ section {
 
 .card-description {
     background-color: white;
-    width: 66%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding: 0.5em 0.5em;
+}
+
+footer {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: hsl(0, 0%, 92%);
+}
+
+.footer-item {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.footer-item-title {
+    margin-bottom: 0.3em;
 }
