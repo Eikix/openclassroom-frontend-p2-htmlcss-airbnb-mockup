@@ -10,12 +10,13 @@ header {
 }
 
 main {
-    padding: 0 2rem;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-    margin: 2rem auto;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
 }
 
 .navbar-container {
@@ -66,15 +67,12 @@ section {
     gap: 0.5rem;
 }
 
-.location-form-container > * {
-    width: 100 %;
-}
-
 .thinner {
     font-weight: 500;
 }
 
 .form-wrapper {
+    margin-top: 1rem;
 }
 
 .location-icon-wrapper {
@@ -98,10 +96,15 @@ section {
     transform: scale(1.2);
 }
 
+.section-title {
+    margin-bottom: 0.5rem;
+}
+
 .filter-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 0.2rem;
 }
@@ -133,6 +136,8 @@ section {
 .popular-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .popular-header-wrapper {
@@ -157,6 +162,16 @@ section {
     max-width: 100%;
     border-radius: 10px;
     border: 2px solid white;
+}
+
+.stars-full {
+    color: #2157cc;
+    font-size: 0.8em;
+}
+
+.stars-empty {
+    color: lightgrey;
+    font-size: 0.8em;
 }
 
 .pop-one {
@@ -189,25 +204,6 @@ section {
     padding: 0.5em 0.5em;
 }
 
-footer {
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background-color: hsl(0, 0%, 92%);
-}
-
-.footer-item {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.7em;
-}
-
-.footer-item-title {
-    margin-bottom: 0.3em;
-}
-
 .accomodation-container {
     display: flex;
     flex-direction: column;
@@ -227,6 +223,7 @@ footer {
     align-items: flex-start;
     max-width: 100%;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px #f0f0f0;
 }
 
 .accomodation-img {
@@ -244,4 +241,23 @@ footer {
     flex-direction: column;
     gap: 0.4em;
     padding: 0.5em 0.5em;
+}
+
+footer {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: hsl(0, 0%, 92%);
+}
+
+.footer-item {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.footer-item-title {
+    margin-bottom: 0.3em;
 }
