@@ -19,6 +19,10 @@ section {
     padding: 0 1rem;
 }
 
+p {
+    font-size: 0.8em;
+}
+
 .navbar-container {
     display: flex;
     flex-direction: column-reverse;
@@ -149,7 +153,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 5px;
     padding: 1em 1em;
     max-width: 18em;
@@ -157,11 +161,21 @@ section {
 
 .popular-card {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    height: 6em;
     max-width: 100%;
     border-radius: 10px;
     border: 2px solid white;
+    box-shadow: 1px 1px 5px 5px #f0f0f0;
+}
+
+.popular-img {
+    width: 35%;
+    min-height: 6em;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    object-position: center center;
 }
 
 .stars-full {
@@ -174,30 +188,9 @@ section {
     font-size: 0.8em;
 }
 
-.pop-one {
-    background-image: url('./assets/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center left;
-}
-
-.pop-two {
-    background-image: url('./assets/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center left;
-}
-
-.pop-three {
-    background-image: url('./assets/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center left;
-}
-
 .card-description {
     background-color: white;
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -273,7 +266,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.4em;
-    padding: 0.5em 0.5em;
+    padding: 1em 0.5em;
 }
 
 footer {
