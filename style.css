@@ -9,13 +9,8 @@ header {
     position: relative;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 section {
-    margin: 1rem 1rem;
+    margin: 2em 1rem;
     padding: 0 1rem;
 }
 
@@ -23,21 +18,19 @@ p {
     font-size: 0.8em;
 }
 
+footer {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: hsl(0, 0%, 92%);
+}
+
 .navbar-container {
     display: flex;
     flex-direction: column-reverse;
     padding: 1.3rem 1rem;
     gap: 2rem;
-}
-
-@media (min-width: 40em) {
-    .navbar-container {
-        display: flex;
-        flex-direction: row;
-        padding: 1rem 1rem;
-        gap: 2rem;
-        justify-content: flex-end;
-    }
 }
 
 .nav-brand {
@@ -134,7 +127,7 @@ p {
 .info-wrapper {
     display: flex;
     gap: 0.7em;
-    margin: 1em 0;
+    margin: 1em 2em;
 }
 
 .popular-container {
@@ -188,6 +181,11 @@ p {
     font-size: 0.8em;
 }
 
+.stars-wrapper {
+    display: flex;
+    margin: 0 0.7em;
+}
+
 .card-description {
     background-color: white;
     width: 65%;
@@ -200,7 +198,7 @@ p {
 .accomodation-container {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .accomodation-wrapper {
@@ -214,9 +212,18 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 100%;
+    min-width: 13em;
+    max-width: 20em;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 5px #f0f0f0;
+    background-color: white;
+    gap: 0.5em;
+    padding: 0.3em;
+}
+
+.acc-title,
+.acc-price {
+    margin: 0 1em;
 }
 
 .accomodation-img {
@@ -225,15 +232,6 @@ p {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     object-position: top 7em center;
-}
-
-.acc-description {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;
-    padding: 0.5em 0.5em;
 }
 
 .activities-container {
@@ -269,14 +267,6 @@ p {
     padding: 1em 0.5em;
 }
 
-footer {
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background-color: hsl(0, 0%, 92%);
-}
-
 .footer-item {
     padding: 1em;
     display: flex;
@@ -286,4 +276,76 @@ footer {
 
 .footer-item-title {
     margin-bottom: 0.3em;
+}
+
+@media (min-width: 66em) {
+    main {
+        margin: 1em 2em;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 2em 4em;
+        gap: 20%;
+        margin: 1em 2em;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+    }
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 4rem;
+        gap: 4rem;
+        justify-content: flex-end;
+    }
+
+    .nav-brand {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+
+    .lg-grid-wrapper {
+        display: grid;
+        align-items: flex-start;
+        justify-items: flex-start;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+    }
+
+    .popular-container {
+        grid-column: 8 / 13;
+        grid-row: 1/2;
+    }
+
+    .popular-cards-container {
+        padding: 2em;
+        border-radius: 2em;
+        min-height: 65vh;
+        justify-content: space-around;
+    }
+
+    .popular-header-wrapper {
+        justify-self: flex-start;
+    }
+
+    .accomodation-container {
+        grid-column: 1 / 8;
+        grid-row: 1/2;
+        background-color: hsl(0, 0%, 93%);
+        padding: 2em;
+        border-radius: 2em 2em;
+        min-height: 65vh;
+    }
+
+    .accomodation-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
