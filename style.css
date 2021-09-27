@@ -9,6 +9,14 @@ header {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
 section {
     margin: 2em 1rem;
     padding: 0 1rem;
@@ -29,6 +37,7 @@ footer {
 .navbar-container {
     display: flex;
     flex-direction: column-reverse;
+    font-size: 1.5em;
     padding: 1.3rem 1rem;
     gap: 2rem;
 }
@@ -47,13 +56,19 @@ footer {
 }
 
 .first-nav-item {
+    color: blue;
+    font-weight: 400;
 }
 
 .second-nav-item {
+    font-weight: 400;
 }
 
 .third-nav-item {
     text-align: end;
+    color: blue;
+    font-weight: 600;
+    padding-top: 0.5em;
 }
 
 .location-form-container {
@@ -103,7 +118,7 @@ footer {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0.2rem;
+    gap: 2%;
 }
 
 .filter {
@@ -149,13 +164,13 @@ footer {
     background-color: hsl(0, 0%, 95%);
     border-radius: 5px;
     padding: 1em 1em;
-    max-width: 18em;
+    max-width: 35em;
 }
 
 .popular-card {
     display: flex;
     align-items: center;
-    height: 6em;
+    height: 7em;
     max-width: 100%;
     border-radius: 10px;
     border: 2px solid white;
@@ -164,7 +179,7 @@ footer {
 
 .popular-img {
     min-width: 35%;
-    min-height: 6em;
+    min-height: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
@@ -183,7 +198,7 @@ footer {
 
 .stars-wrapper {
     display: flex;
-    margin: 0 0.7em;
+    margin: 0.5em 0.7em;
 }
 
 .card-description {
@@ -198,12 +213,17 @@ footer {
 .accomodation-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5em;
 }
 
 .accomodation-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
@@ -212,7 +232,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-width: 13em;
+    min-width: max(13em, 30%);
     max-width: 20em;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 5px #f0f0f0;
@@ -245,7 +265,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 100%;
+    max-width: 25em;
     border-radius: 25px;
     box-shadow: 1px 1px 5px 5px #f0f0f0;
 }
@@ -280,7 +300,7 @@ footer {
 
 @media (min-width: 66em) {
     main {
-        margin: 1em 2em;
+        margin: 1em 4em;
     }
 
     footer {
@@ -301,6 +321,14 @@ footer {
         padding: 3rem 4rem;
         gap: 4rem;
         justify-content: flex-end;
+        font-size: 1.5em;
+    }
+    .first-nav-item {
+        box-shadow: 0 -0.9em white, 0 -1em blue;
+    }
+
+    .third-nav-item {
+        padding-top: 0;
     }
 
     .nav-brand {
@@ -311,8 +339,8 @@ footer {
 
     .lg-grid-wrapper {
         display: grid;
-        align-items: flex-start;
-        justify-items: flex-start;
+        align-items: center;
+        justify-items: center;
         grid-template-columns: repeat(12, 1fr);
         width: 100%;
     }
@@ -340,6 +368,9 @@ footer {
         padding: 2em;
         border-radius: 2em 2em;
         min-height: 65vh;
+        justify-content: space-around;
+        align-items: start;
+        align-content: center;
     }
 
     .accomodation-wrapper {
@@ -347,5 +378,23 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .activities {
+        grid-column: 2/12;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .activities-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .activities-card {
+        min-width: 15em;
     }
 }
