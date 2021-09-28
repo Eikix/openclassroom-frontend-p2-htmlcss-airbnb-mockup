@@ -20,7 +20,7 @@ a {
 }
 
 a:visited {
-    color: black;
+    color: inherit;
 }
 
 section {
@@ -58,16 +58,21 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 2rem;
 }
 
 .first-nav-item {
     color: var(--fc-primary, blue);
     font-weight: 400;
+    min-width: 50%;
+    text-align: center;
+    box-shadow: 0 0.9em white, 0 1em var(--fc-primary);
 }
 
 .second-nav-item {
     font-weight: 400;
+    min-width: 50%;
+    text-align: center;
+    box-shadow: 0 0.9em white, 0 1em var(--bg-color-primary);
 }
 
 .third-nav-item {
