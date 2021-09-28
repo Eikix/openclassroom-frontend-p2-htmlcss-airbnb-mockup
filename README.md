@@ -3,3 +3,8 @@
  Done with Openclassrooms' frontend developer path: https://openclassrooms.com/
 
 I was given a couple of pictures of a mockup website and was tasked to code it from scratch! Here's the result.
+
+
+![plot](./assets/desktop.png)
+
+![plot](./assets/iphone.png)
