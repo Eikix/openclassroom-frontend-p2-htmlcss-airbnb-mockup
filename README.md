@@ -5,6 +5,6 @@
 I was given a couple of pictures of a mockup website and was tasked to code it from scratch! Here's the result.
 
 
-![Desktop Mockup](./assets/desktop.png)
+![Desktop Mockup](./assets/desktop.png){:height="50%" width="50%"}
 
-![Mobile Mockup](./assets/iphone.png)
+![Mobile Mockup](./assets/iphone.png){:height="50%" width="50%"}
