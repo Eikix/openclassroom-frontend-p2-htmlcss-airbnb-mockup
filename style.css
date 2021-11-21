@@ -95,6 +95,7 @@ footer {
 }
 
 .form-wrapper {
+    position: relative;
     margin-top: 1rem;
     box-shadow: 1px 1px 10px 1px #d3d3d3;
     max-width: fit-content;
@@ -114,11 +115,25 @@ footer {
 }
 
 .search-icon-wrapper {
+    position: absolute;
+    top: 5%;
+    left: 100%;
     border-radius: 5px 5px 5px 5px;
     background-color: var(--fc-primary, blue);
     color: white;
     padding: 0.4rem 0.6rem;
-    transform: scale(1.2);
+    opacity: 1;
+}
+
+.search-text {
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--fc-primary, blue);
+    color: white;
+    padding: 0.4rem 0.6rem;
+    opacity: 0;
 }
 
 .section-title {
@@ -336,6 +351,14 @@ footer {
 }
 
 @media (min-width: 70em) {
+    .search-icon-wrapper {
+        opacity: 0;
+    }
+
+    .search-text {
+        opacity: 1;
+    }
+
     .activities {
         display: block;
     }
